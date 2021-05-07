@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(51, 47, 47);
+}
+.container{
+    max-width: 500px;
+    height: 400px;
+    margin:100px auto;
+    border-radius: 30px;
+}
+.container-Time{
+    background-color: rgb(167, 109, 221);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.container-Time nav{
+    width: 100%;
+    margin-bottom: 40px;
+    height: 80px;
+    font-size: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.container-Time div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.container-Time div button{
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    background-color: white;
+    transition: 0.4s;
+}
+button:focus{
+    outline: 0;
+}
+.container-Time div button:hover{
+    background-color: rgb(132, 41, 216);
+    color:white;
+}
+.options-Time{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius: 30px;
+}
+.options-Time div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.options-Time div div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.options-Time div div button{
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid rgb(167, 109, 221);
+    cursor: pointer;
+    color: rgb(167, 109, 221);
+    transition: 0.4s;
+}
+.options-Time div div button:hover{
+    background-color: rgb(167, 109, 221);
+    color: white;
+}
+i{
+    font-weight: normal;
+    font-style: oblique;
+}
+#myVideo{
+    display: none;
+}
+.container-Time h1{
+    color: white;
+    padding: 10px;
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pomodoro Time</title>
+
+</head>
+
+<body>
+
+    <video id="myVideo">
+        <source src="./audio/01.mp4" type="audio/mp4">
+    </video>
+    <div class="container">
+        <div class="container-Time">
+            <h1 id="txt-title">Session</h1>
+            <nav>
+                <h3 class="min"> </h3>
+                <h3 class="sec"> </h3>
+            </nav>
+            <div><button class="btn" onclick="startTime()"> <i id="icon" class="fa fa-play"></i> <i
+                        class="txtstart">Start</i> </button> <button onclick="resetbtn()"> <i class="fa fa-undo">
+                        Reset</i></button></div>
+        </div>
+        <div class="options-Time">
+            <div>
+                <h2>Session</h2>
+                <div><button onclick="btnup('Time-working')"> <i class="fa fa-arrow-up"></i> </button>
+                    <h2 class="Time-working"></h2> <button onclick="btndown('Time-working')"><i
+                            class="fa fa-arrow-down"></i></button>
+                </div>
+            </div>
+            <div>
+                <h2>Break</h2>
+                <div><button onclick="btnup('Time-break')"> <i class="fa fa-arrow-up"></i> </button>
+                    <h2 class="Time-break"> </h2> <button onclick="btndown('Time-break')"><i
+                            class="fa fa-arrow-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
